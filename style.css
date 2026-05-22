@@ -1,0 +1,373 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#fff8f0;
+color:#333;
+}
+
+.navbar{
+background:#8b0000;
+color:white;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 8%;
+flex-wrap:wrap;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+width:60px;
+height:60px;
+border-radius:50%;
+object-fit:cover;
+}
+
+.logo h1{
+font-size:28px;
+}
+
+.logo p{
+font-size:13px;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:gold;
+}
+
+.search-box input{
+padding:10px 15px;
+border:none;
+border-radius:5px;
+outline:none;
+width:220px;
+margin-left: 30px;
+}
+
+.hero{
+height:90vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)),
+url('bacground.jpeg');
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+}
+
+.hero-content h2{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+
+background:#ff4500;
+color:white;
+
+padding:12px 25px;
+
+text-decoration:none;
+border-radius:5px;
+
+transition:0.3s;
+}
+
+.btn:hover{
+background:#ff6347;
+}
+
+.section{
+padding:70px 8%;
+}
+
+.section h2{
+text-align:center;
+color:#8b0000;
+margin-bottom:15px;
+}
+
+.section-text{
+text-align:center;
+margin-bottom:40px;
+line-height:1.7;
+}
+
+.cards{
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+}
+
+.card{
+background:white;
+
+border-radius:10px;
+overflow:hidden;
+
+box-shadow:0 4px 10px
+rgba(0,0,0,0.1);
+
+display:flex;
+flex-direction:column;
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+color:#8b0000;
+}
+
+.card p{
+padding:0 15px 20px;
+line-height:1.5;
+}
+
+.card-btn{
+margin:0 15px 20px;
+
+background:#8b0000;
+color:white;
+
+padding:10px 18px;
+
+text-decoration:none;
+border-radius:5px;
+
+width:fit-content;
+}
+
+.recipe-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(320px,1fr));
+
+  gap:30px;
+}
+
+.recipe-box{
+  background:white;
+
+  padding:25px;
+
+  border-radius:10px;
+
+  box-shadow:0 4px 10px
+  rgba(0,0,0,0.1);
+
+  display:flex;
+  flex-direction:column;
+
+  height:100%;
+}
+
+.recipe-img{
+  width:100%;
+  height:250px;
+
+  object-fit:cover;
+
+  border-radius:10px;
+
+  margin-bottom:20px;
+}
+
+.recipe-box h2{
+  color:#8b0000;
+
+  margin-bottom:15px;
+}
+
+.recipe-description{
+  line-height:1.7;
+
+  margin-bottom:20px;
+
+  flex-grow:1;
+}
+
+.recipe-box h3{
+  margin-top:15px;
+
+  color:#444;
+}
+
+.recipe-box ul,
+.recipe-box ol{
+  margin-left:20px;
+
+  margin-top:10px;
+
+  line-height:1.8;
+}
+
+.about-section,
+.contact-section{
+padding:70px 8%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+gap:50px;
+flex-wrap:wrap;
+}
+
+.about-section img,
+.contact-image img{
+width:450px;
+max-width:100%;
+
+border-radius:10px;
+}
+
+.about-section div,
+.contact-content{
+flex:1;
+min-width:300px;
+}
+
+.socials{
+margin-top:20px;
+
+display:flex;
+gap:20px;
+}
+
+.socials a{
+color:#8b0000;
+font-size:30px;
+}
+
+form{
+max-width:600px;
+
+display:flex;
+flex-direction:column;
+
+gap:15px;
+}
+
+input,
+textarea{
+padding:15px;
+
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+textarea{
+height:150px;
+}
+
+button{
+padding:12px;
+
+border:none;
+border-radius:5px;
+
+background:#8b0000;
+color:white;
+
+cursor:pointer;
+}
+
+.message-card{
+background:white;
+
+padding:20px;
+
+border-radius:10px;
+
+margin-top:20px;
+
+box-shadow:0 4px 10px
+rgba(0,0,0,0.1);
+
+border-left:5px solid #8b0000;
+}
+
+footer{
+background:#8b0000;
+color:white;
+
+text-align:center;
+
+padding:20px;
+margin-top:50px;
+}
+
+@media(max-width:768px){
+
+.navbar{
+flex-direction:column;
+gap:20px;
+}
+
+.hero-content h2{
+font-size:35px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
+.about-section,
+.contact-section{
+flex-direction:column;
+text-align:center;
+}
+
+.search-box input{
+width:100%;
+}
+
+}
